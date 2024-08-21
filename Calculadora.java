@@ -28,9 +28,9 @@ public class Calculadora{
     }
 
 //métodos
-    public int somar1(){
-        return(num1+num2);
-    }
+   // public int somar1(){
+     //   return(num1+num2);
+    //}
 
     public void somar2(){
         int resultado = num1+num2;
@@ -45,13 +45,13 @@ public class Calculadora{
         //declarando a variável / objeto
         Calculadora c1;
         // criando o objeto/ instância
-        c1=new Calculadora(10,0);
+        c1=new Calculadora();
         //c1.num1=5;
         //c1.num2=2;
        // System.out.println(c1.somar1());
         c1.somar2();
         //declaração e instânciação do objeto c2
-        Calculadora c2 = new Calculadora(10,5);
+        Calculadora c2 = new Calculadora();
         c2.subtrair();
         c2.setNum1(20);
         System.out.println("Novo valor de num1: "+c2.getNum1());
