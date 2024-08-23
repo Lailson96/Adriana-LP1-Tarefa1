@@ -1,22 +1,34 @@
 
 public class Voto {
-	//11
-	private int ano;
-	public Voto(int n1) {
-		this.ano=n1;
+	/*11. Ler o ano atual e o ano de nascimento de uma pessoa. 
+	 * Escrever uma mensagem que diga se ela poderá ou não votar este ano 
+	 * (não é necessário considerar o mês em que a pessoa nasceu).
+	 */
+
+	    public int anoAtual;
+	    public int anoNascimento;
+
+	    public Voto(int anoAtual, int anoNascimento){
+	        this.anoAtual = anoAtual;
+	        this.anoNascimento = anoNascimento;
+	    }
+	    public String verificarIdade() {
+	        if(anoAtual - anoNascimento >= 16){
+	            return "Você pode votar.";
+	        } else {
+	            return "Você não pode votar.";
+	        }
+	    }
+	    public static void main(String[] args) {
+	        Voto i = new Voto(2024, 2003);
+	        
+	        System.out.println(i.verificarIdade());
+	    }
 	}
-	public void verificarAno() {
-		int resultado= 2024-ano;
-		if (resultado>=18 ) {
-		System.out.println("Pode votar!");
-		}
-		else {
-		System.out.println ("Não pode votar");
-		}
-	}
-	public static void main(String[] args) {
-		Voto v1;
-		v1= new Voto(2002);
-		v1.verificarAno();
-	}
-}
+
+/*	Ano Atual		Ano Nascimento			condicão				Saída
+	2024			2003					2024-2010>= 16			"Você poderá votar."
+
+ */
+
+

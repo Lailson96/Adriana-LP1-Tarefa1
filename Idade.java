@@ -1,9 +1,9 @@
 public class Idade {
-    /*Faça um algoritmo que leia a idade de uma pessoa 
-     * expressa em anos, meses e dias e escreva a idade dessa pessoa 
-     * expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias. 
-     1
-     atributos
+    /*
+     * 1. Faça um algoritmo que leia a idade de uma pessoa expressa em anos,
+     *  meses e dias e escreva a idade dessa pessoa expressa apenas em dias. 
+     *  Considerar ano com 365 dias e mês com 30 dias.
+
      */
         private int dia;
         private int mes;
@@ -23,16 +23,19 @@ public class Idade {
         	int resultado =((mes*30)+(ano*365)+dia);
         	System.out.println(resultado);
         }
-        
-        
         public static void main(String []args){
         	Idade t1;
         	
-        	t1=new Idade(2,2,2);
+        	t1=new Idade(1,4,2);
         	t1.total();
-        	
-        	
         }
         
 } 
 
+/*Dias		Meses		Anos	Total()						Saída
+	1		4			2		1 + (4 * 30) + (2 * 365)	851
+
+				
+
+
+*/

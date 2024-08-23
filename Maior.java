@@ -1,5 +1,9 @@
 
 public class Maior {
+	/*
+	 * 12. Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.
+
+	 */
 	private int num1;
 	private int num2;
 	public Maior(int n1, int n2) {
@@ -21,3 +25,7 @@ public class Maior {
 		m1.maior();
 	}
 }
+/*
+ * Número 1		Número 2	verificarMaiorNumero()	Saída
+	3			2				3 > 2					2
+*/
